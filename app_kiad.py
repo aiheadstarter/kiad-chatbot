@@ -11,7 +11,7 @@ st.write(
 
 # OpenAI API 키를 secrets.toml 또는 환경 변수에서 가져옵니다.
 try:
-    openai_api_key = st.secrets["openai_api_key"]
+    openai_api_key = st.secrets["OPENAI_API_KEY"]
 except:
     openai_api_key = st.text_input("OpenAI API 키를 입력하세요:", type="password")
     if not openai_api_key:
